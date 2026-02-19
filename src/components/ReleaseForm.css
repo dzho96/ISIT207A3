@@ -1,0 +1,124 @@
+
+.release-form-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s;
+  z-index: 10;
+}
+.release-form-close-btn:hover {
+  color: #d33;
+}
+
+.release-form-page {
+  position: relative;
+}
+
+.release-form-page {
+  width: 100vw;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  box-sizing: border-box;
+}
+
+.release-form-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #1a3557;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.release-form label {
+  display: block;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+
+.release-form input,
+.release-form select,
+.release-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background: #f8f9fa;
+}
+
+.release-form textarea {
+  resize: vertical;
+}
+
+.release-form button[type="submit"] {
+  width: 100%;
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.release-form button[type="submit"]:hover {
+  background: #256025;
+}
+
+
+/* Two-column grid for form rows */
+.release-form-row {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.2rem;
+}
+.release-form-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.release-form-section {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem 0.5rem 1.5rem;
+  margin-bottom: 2rem;
+  background: #fafbfc;
+}
+.release-form-section legend {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a3557;
+  margin-bottom: 0.7rem;
+  padding: 0 0.5rem;
+}
+
+.release-form-radio-group {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 700px) {
+  .release-form-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .release-form-section {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+}

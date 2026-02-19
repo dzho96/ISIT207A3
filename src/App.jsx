@@ -1,30 +1,45 @@
-import NavBar from "./components/NavBar";
-import "./styles.css";
-import Dogs from "./components/Dogs";
-import Cats from "./components/Cats";
-import About from "./components/About";
-import Home from "./components/Home";
-import ShowCat from "./components/ShowCat";
 
+
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
+import AdoptionGallery from "./components/AdoptionGallery";
+import PetDetails from "./components/PetDetails";
+import ReleaseInfo from "./components/ReleaseInfo";
+import About from "./components/About";
+import Articles from "./components/Articles";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
+import ArticlePage from "./components/ArticlePage";
+import Dashboard from "./components/Dashboard";
 
 function App() {
+  const [user, setUser] = useState(() => {
+    const u = localStorage.getItem("currentUser");
+    return u ? JSON.parse(u) : null;
+  });
   return (
-    <>
-      <Router>
-        <NavBar />
-
+    <Router>
+      <ScrollToTop />
+      <NavBar user={user} setUser={setUser} />
+      <div className="main-layout">
         <div className="container">
           <Routes>
-            <Route path="/" exact element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/adoption" element={<AdoptionGallery />} />
+            <Route path="/adoption/:id" element={<PetDetails />} />
+            <Route path="/release" element={<ReleaseInfo />} />
             <Route path="/about" element={<About />} />
-            <Route path="/funcat" element={<Cats />} />
-            <Route path="/fundog" element={<Dogs />} />
-            <Route path="/showcat" element={<ShowCat />} />
+            <Route path="/articles" element={<Articles />} />
+            <Route path="/articles/dog/:id" element={<ArticlePage type="dog" />} />
+            <Route path="/articles/cat/:id" element={<ArticlePage type="cat" />} />
+            <Route path="/dashboard" element={<Dashboard user={user} setUser={setUser} />} />
           </Routes>
         </div>
-      </Router>
-    </>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

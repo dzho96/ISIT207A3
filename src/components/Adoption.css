@@ -1,0 +1,78 @@
+/* Back button styling */
+.adoption-back-btn {
+  background: #f5f5f5;
+  color: #1a3557;
+  border: 1px solid #bbb;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.adoption-back-btn:hover {
+  background: #e0e0e0;
+  color: #0d223a;
+  border-color: #888;
+}
+.adoption-page {
+  max-width: 500px;
+  margin: 3rem auto 2rem auto;
+  background: var(--primary-bg-color);
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adoption-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a3557;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.adoption-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.adoption-form label {
+  font-size: 1.1rem;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.adoption-form input,
+.adoption-form select,
+.adoption-form textarea {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid #bfa49a;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
+.adoption-form button {
+  margin-top: 1rem;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #ff9800;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.adoption-form button:hover {
+  background: #e65100;
+}

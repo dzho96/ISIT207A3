@@ -1,0 +1,76 @@
+// src/components/petPalsData.js
+
+export const petPals = [
+  {
+    id: "pet_1",
+    name: "Mochi",
+    age: 3,
+    species: "Persian",
+    image: "/persian.jpg",
+    description: "Calm and affectionate, loves lounging in sunny spots and gentle brushing.",
+  },
+  {
+    id: "pet_2",
+    name: "Buddy",
+    age: 3,
+    species: "Labrador Retriever",
+    image: "/labrador.jpg",
+    description: "Energetic and loyal, loves walks, games, and being part of family activities.",
+  },
+  {
+    id: "pet_3",
+    name: "Atlas",
+    age: 5,
+    species: "Maine Coon",
+    image: "/mainecoon.jpg",
+    description: "Large but gentle, enjoys exploring and quietly keeping an eye on everyone.",
+  },
+  {
+    id: "pet_4",
+    name: "Rex",
+    age: 4,
+    species: "German Shepherd",
+    image: "/germanshepherd.jpg",
+    description: "Alert and intelligent, quick to learn and naturally protective.",
+  },
+  {
+    id: "pet_5",
+    name: "Luna",
+    age: 2,
+    species: "Siamese",
+    image: "/siamese.jpg",
+    description: "Playful and vocal, always curious and happiest when around people.",
+  },
+  {
+    id: "pet_6",
+    name: "Sunny",
+    age: 2,
+    species: "Golden Retriever",
+    image: "/goldenretriever.jpg",
+    description: "Cheerful and gentle, gets along well with everyone and loves attention.",
+  },
+  {
+    id: "pet_7",
+    name: "Oliver",
+    age: 4,
+    species: "British Shorthair",
+    image: "/shorthair.jpg",
+    description: "Independent yet friendly, content with short play sessions and long naps.",
+  },
+  {
+    id: "pet_8",
+    name: "Peanut",
+    age: 1,
+    species: "French Bulldog",
+    image: "/bulldog.jpg",
+    description: "Small but full of personality, enjoys short playtimes and lots of cuddles.",
+  },
+  {
+    id: "pet_9",
+    name: "Willow",
+    age: 1,
+    species: "Ragdoll",
+    image: "/ragdoll.jpg",
+    description: "Sweet and relaxed, enjoys being carried and following humans around.",
+  }
+];

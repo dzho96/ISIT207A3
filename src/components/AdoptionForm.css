@@ -1,0 +1,75 @@
+.adoption-form-modal-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.25);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adoption-form-modal {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  padding: 2.5rem 2rem 2rem 2rem;
+  min-width: 320px;
+  max-width: 95vw;
+  position: relative;
+}
+
+.adoption-form-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.adoption-form-close:hover {
+  color: #ff9800;
+}
+
+.adoption-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.adoption-form label {
+  font-size: 1.1rem;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.adoption-form input,
+.adoption-form select,
+.adoption-form textarea {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid #bfa49a;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
+.adoption-form button[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #ff9800;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.adoption-form button[type="submit"]:hover {
+  background: #e65100;
+}
