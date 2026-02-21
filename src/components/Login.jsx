@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Form.css";
 
 const Login = ({ onLogin, onSwitch }) => {
   const [email, setEmail] = useState("");

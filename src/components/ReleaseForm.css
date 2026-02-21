@@ -65,7 +65,7 @@
 
 .release-form button[type="submit"] {
   width: 100%;
-  background: #2e7d32;
+  background: #ff9800;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -74,12 +74,13 @@
   font-weight: 600;
   margin-top: 1.2rem;
   cursor: pointer;
-  transition: background 0.2s;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.10);
+  transition: background 0.2s, box-shadow 0.2s;
 }
 .release-form button[type="submit"]:hover {
-  background: #256025;
+  background: #e65100;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
 }
-
 
 /* Two-column grid for form rows */
 .release-form-row {
