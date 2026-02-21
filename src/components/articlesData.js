@@ -67,8 +67,8 @@ export const videoArticles = [
     title: "How to Bathe A Dog",
     date: "15 February 2026",
     image: "https://img.youtube.com/vi/WRcCPAgmqnI/hqdefault.jpg",
-    summary: "A complete guide to safely and effectively bathing your dog at home.",
-    body: "A",
+    summary: "How to Bathe a Dog: Step-by-Step Instructions",
+    body: "We're here to show you how to wash a dog step by step—plus, tips for how to prepare, the supplies you’ll need, how often to bathe a dog, and how to keep your pup calm during the bath.",
     link: "/articles/video/video_article_1",
     youtubeId: "WRcCPAgmqnI"
   },
@@ -77,8 +77,8 @@ export const videoArticles = [
     title: "How to Litter Train a Kitten",
     date: "14 February 2026",
     image: "https://img.youtube.com/vi/uxVizBoF3qQ/hqdefault.jpg",
-    summary: "Learn the basics of litter training your new kitten.",
-    body: "A",
+    summary: "Get step-by-step advice for how to train your kitten to use the litter box",
+    body: "Unlike puppies who require ongoing house training, most kittens have an innate desire to cover their waste and will seek out loose material—like dirt or scoopable litter—on their own. Still, a gentle nudge in the right direction can make a big difference when it comes to litter training kittens.",
     link: "/articles/video/video_article_2",
     youtubeId: "uxVizBoF3qQ"
   },

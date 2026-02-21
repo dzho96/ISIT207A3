@@ -1,11 +1,12 @@
 
 import React, { useMemo } from 'react';
 import "./Home.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { allArticles } from "./articlesData";
 
 const Home = () => {
+    const navigate = useNavigate();
 
     // No transition or timer needed for a single image
 
@@ -61,7 +62,7 @@ const Home = () => {
             <hr className="section-divider" />
             <div className="section adopt-release-section">
                 <div className="adopt-release-bg" style={{ '--house-bg': `url(/house.svg)` }}>
-                    <div className="adopt-release-split adopt-split" onClick={() => window.location.href = '/adoption'} tabIndex={0} role="button">
+                    <div className="adopt-release-split adopt-split" onClick={() => navigate('/adoption')} tabIndex={0} role="button">
                         <div className="adopt-hover-content">
                             <img className="adopt-pet face-opposite" src="/adopt.svg" alt="Adopt pet" />
                             <div className="adopt-info info-delayed">
@@ -70,7 +71,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="adopt-release-split release-split" onClick={() => window.location.href = '/release'} tabIndex={0} role="button">
+                    <div className="adopt-release-split release-split" onClick={() => navigate('/release')} tabIndex={0} role="button">
                         <div className="release-hover-content">
                             <img className="release-pet face-opposite" src="/release.svg" alt="Release pet" />
                             <div className="release-info info-delayed">
