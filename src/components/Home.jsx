@@ -33,6 +33,9 @@ const Home = () => {
                         <p>
                             Pet Haven is dedicated to improving the lives of animals in our community. Discover resources, adoption opportunities, and support for pet owners and animal lovers.
                         </p>
+                        <Link to="/about" className="cta-btn reserve-btn" style={{ marginTop: '1.5rem', display: 'inline-block' }}>
+                            Find Out More
+                        </Link>
                     </div>
                 </div>
             </div>

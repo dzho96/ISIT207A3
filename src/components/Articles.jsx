@@ -1,4 +1,4 @@
-import { catArticles, dogArticles } from "./articlesData";
+import { catArticles, dogArticles, videoArticles } from "./articlesData";
 import { Link } from "react-router-dom";
 
 import "./Articles.css";
@@ -35,6 +35,23 @@ const Articles = () => {
                                     <div className="article-date">{article.date}</div>
                                     <div className="article-title">{article.title}</div>
                                     <div className="article-extract">{article.summary}</div>
+                                </div>
+                            </div>
+                        </Link>
+                    ))}
+                </div>
+            </div>
+            <div className="articles-section">
+                <h2 className="articles-section-title">Pet Care Videos</h2>
+                <div className="articles-cards-row">
+                    {videoArticles.map(video => (
+                        <Link to={video.link} className="article-card-link" key={video.id}>
+                            <div className="article-card">
+                                <div className="article-image" style={{ backgroundImage: `url('${video.image}')` }}></div>
+                                <div className="article-info">
+                                    <div className="article-date">{video.date}</div>
+                                    <div className="article-title">{video.title}</div>
+                                    <div className="article-extract">{video.summary}</div>
                                 </div>
                             </div>
                         </Link>

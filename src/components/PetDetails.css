@@ -1,3 +1,35 @@
+:root{
+  --pet-name-color: #1a3557;
+}
+
+/* Breadcrumb navigation styles */
+.breadcrumb-nav {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #bdbdbd;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.breadcrumb-link {
+  color: black;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+.breadcrumb-link:hover,
+.breadcrumb-link:focus {
+  color: #ff9800;
+}
+
+.breadcrumb-separator {
+  margin: 0 0.3rem;
+}
+
+.breadcrumb-current {
+  color: var(--pet-name-color);
+  font-weight: 700;
+}
 .adoption-back-btn {
   padding: 0.7rem 2rem;
   font-size: 1.1rem;
@@ -15,6 +47,17 @@
 }
 
 .pet-details-page {
+  width: 100vw;
+  min-height: 100vh;
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2.5rem;
+}
+
+.pet-details-container {
   max-width: 700px;
   margin: 3rem auto 2rem auto;
   background: #fff;
@@ -48,26 +91,26 @@
 .pet-details-name {
   font-size: 2rem;
   font-weight: 800;
-  color: #1a3557;
+  color: var(--pet-name-color);
   margin-bottom: 0.5rem;
 }
 
 .pet-details-species {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #4a2c1a;
+  color: var(--primary-color);
   margin-bottom: 0.3rem;
 }
 
 .pet-details-age {
   font-size: 1.05rem;
-  color: #555;
+  color: black;
   margin-bottom: 0.7rem;
 }
 
 .pet-details-desc {
   font-size: 1.1rem;
-  color: #444;
+  color: black;
   margin-bottom: 1.2rem;
 }
 

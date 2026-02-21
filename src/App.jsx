@@ -34,6 +34,7 @@ function App() {
             <Route path="/articles" element={<Articles />} />
             <Route path="/articles/dog/:id" element={<ArticlePage type="dog" />} />
             <Route path="/articles/cat/:id" element={<ArticlePage type="cat" />} />
+            <Route path="/articles/video/:id" element={<ArticlePage type="video" />} />
             <Route path="/dashboard" element={<Dashboard user={user} setUser={setUser} />} />
           </Routes>
         </div>
