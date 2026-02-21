@@ -47,6 +47,8 @@ const NavBar = ({ user, setUser }) => {
                 </div>
                 <div className="navbar-links right-align">
                     <Link to="/" onClick={handleNav}>Home</Link>
+                    <Link to="/about" onClick={handleNav}>About</Link>
+                    <Link to="/articles" onClick={handleNav}>Articles</Link>
                     <div
                         className="navbar-dropdown"
                         onMouseEnter={() => setDropdownOpen(true)}
@@ -62,8 +64,6 @@ const NavBar = ({ user, setUser }) => {
                             </div>
                         )}
                     </div>
-                    <Link to="/about" onClick={handleNav}>About</Link>
-                    <Link to="/articles" onClick={handleNav}>Articles</Link>
                     {/* Auth/Login Button */}
                     {!user ? (
                         <a style={{ cursor: "pointer" }} onClick={() => setAuthModal((v) => !v)}>Log In</a>

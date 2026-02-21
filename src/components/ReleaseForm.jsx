@@ -27,7 +27,7 @@ const ReleaseForm = ({ onClose, user }) => {
       <h2 className="release-form-title">Rehoming Request Form</h2>
       <form className="release-form" onSubmit={handleSubmit}>
         <fieldset className="release-form-section">
-          <legend>You Information</legend>
+          <legend>Your Information</legend>
           <div className="release-form-row">
             <div className="release-form-col">
               <label>Name *
