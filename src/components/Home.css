@@ -47,16 +47,6 @@ body {
     overflow: hidden;
 }
 
-.adopt-split:hover,
-.adopt-split:focus-within {
-    background: rgba(0, 180, 120, 0.10);
-}
-
-.release-split:hover,
-.release-split:focus-within {
-    background: rgba(255, 140, 0, 0.10);
-}
-
 /* Hide hover content by default */
 .adopt-hover-content,
 .release-hover-content {
@@ -74,6 +64,16 @@ body {
     top: 0;
     left: 0;
     z-index: 2;
+}
+
+.adopt-split:hover,
+.adopt-split:focus-within {
+    background: rgba(0, 180, 120, 0.10);
+}
+
+.release-split:hover,
+.release-split:focus-within {
+    background: rgba(64, 123, 255, 0.1);
 }
 
 .adopt-split:hover .adopt-hover-content,
@@ -152,7 +152,7 @@ body {
 }
 
 .release-info {
-    box-shadow: 0 2px 16px 0 #407BFF40;
+    box-shadow: 0 2px 16px 0 #407bff40;
     right: 10%;
 }
 

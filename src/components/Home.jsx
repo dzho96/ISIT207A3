@@ -33,7 +33,7 @@ const Home = () => {
                         <p>
                             Pet Haven is dedicated to improving the lives of animals in our community. Discover resources, adoption opportunities, and support for pet owners and animal lovers.
                         </p>
-                        <Link to="/about" className="cta-btn reserve-btn" style={{ marginTop: '1.5rem', display: 'inline-block' }}>
+                        <Link to="/about" className="cta-btn" style={{ marginTop: '1.5rem', display: 'inline-block' }}>
                             Find Out More
                         </Link>
                     </div>
@@ -75,7 +75,7 @@ const Home = () => {
                             <img className="release-pet face-opposite" src="/release.svg" alt="Release pet" />
                             <div className="release-info info-delayed">
                                 <h3>Release a Pet</h3>
-                                <p>If you can no longer care for your pet, we’re here to help. Click here to begin the safe release process.</p>
+                                <p>If you can no longer care for your pet, we’re here to help. Click here to start the rehoming process and ensure your pet finds a loving home.</p>
                             </div>
                         </div>
                     </div>

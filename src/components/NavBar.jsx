@@ -58,7 +58,7 @@ const NavBar = ({ user, setUser }) => {
                         {dropdownOpen && (
                             <div className="navbar-dropdown-menu">
                                 <Link to="/adoption" className="navbar-dropdown-item" onClick={handleNav}>Adoption</Link>
-                                <Link to="/release" className="navbar-dropdown-item" onClick={handleNav}>Release</Link>
+                                <Link to="/release" className="navbar-dropdown-item" onClick={handleNav}>Rehome</Link>
                             </div>
                         )}
                     </div>
